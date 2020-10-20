@@ -1,0 +1,440 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+#showImg_1 {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    animation: showImg_left 30s infinite linear;
+}
+
+#showImg_2 {
+    position: absolute;
+    z-index: 102;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    animation: showImg_right 25s infinite linear;
+}
+
+#showImg_3 {
+    position: absolute;
+    z-index: 103;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    animation: showImg_left 20s infinite linear;
+}
+
+#showImg_4 {
+    position: absolute;
+    z-index: 103;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    animation: showImg_right 15s infinite linear;
+}
+
+#showImg_5 {
+    position: absolute;
+    z-index: 103;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    animation: showImg_center 2s infinite linear;
+}
+
+@keyframes showImg_left {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes showImg_right {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes showImg_center {
+    0% {
+        filter: hue-rotate(0deg) saturate(100%)
+    }
+
+    50% {
+        filter: hue-rotate(40deg) saturate(120%)
+    }
+
+    100% {
+        filter: hue-rotate(0deg) saturate(100%)
+    }
+}
+
+@media screen and (min-width : 1400px ) {
+    .show {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        height: 960px;
+        width: 100%;
+        overflow: hidden;
+        background: #203550;
+        background-image: url(lib/BGP-21.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        cursor: default;
+        user-select: none;
+        padding-bottom: 100px;
+    }
+
+    .show-title {
+        position: relative;
+        height: 60px;
+        width: 100%;
+    }
+
+    .show-cont {
+        position: relative;
+        height: 880px;
+        width: 100%;
+    }
+
+    .show-left {
+        position: relative;
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        text-align: center;
+    }
+
+        .show-left h1 {
+            position: relative;
+            margin: 0 auto;
+            color: #ffffff;
+            font-weight: normal;
+            padding-top: 50px;
+            font-size: 32px;
+        }
+
+        .show-left h2 {
+            position: relative;
+            margin: 0 auto;
+            color: #ffffff;
+            font-weight: normal;
+            padding-top: 20px;
+            font-size: 24px;
+        }
+
+    .show-tip {
+        position: relative;
+        padding-top: 20px;
+        color: rgba(255,255,255,0.8);
+        font-size: 14px;
+        font-weight: lighter;
+    }
+
+    .show-right {
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        width: 68%;
+    }
+
+    .show-img {
+        position: relative;
+        height: 100%;
+        text-align: center;
+        left: 10%;
+    }
+
+    .show-text {
+        position: relative;
+        padding-top: 50px;
+        color: rgba(255,255,255,0.8);
+        line-height: 2;
+        font-weight: lighter;
+        font-size: 16px;
+    }
+
+    .show-info {
+        position: relative;
+        padding-top: 50px;
+    }
+
+    .show-link {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+        .show-link a {
+            position: relative;
+            display: inline-block;
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.5);
+            width: 160px;
+            line-height: 32px;
+        }
+
+            .show-link a:hover {
+                border: 1px solid #2080ff;
+                background: rgba(255,255,255,0.1);
+            }
+}
+
+@media screen and (min-width: 840px ) and (max-width: 1399px) {
+    .show {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        height: 640px;
+        width: 100%;
+        overflow: hidden;
+        background: #203550;
+        background-image: url(Images/BGP-21.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        cursor: default;
+        user-select: none;
+        padding-bottom: 200px;
+    }
+
+    .show-title {
+        position: relative;
+        height: 40px;
+        width: 100%;
+    }
+
+    .show-cont {
+        position: relative;
+        height: 600px;
+        width: 100%;
+    }
+
+    .show-left {
+        position: relative;
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        text-align: center;
+    }
+
+        .show-left h1 {
+            position: relative;
+            margin: 0 auto;
+            color: #ffffff;
+            font-weight: normal;
+            padding-top: 40px;
+            font-size: 24px;
+        }
+
+        .show-left h2 {
+            position: relative;
+            margin: 0 auto;
+            color: #ffffff;
+            font-weight: normal;
+            padding-top: 15px;
+            font-size: 18px;
+        }
+
+    .show-tip {
+        position: relative;
+        padding-top: 15px;
+        color: rgba(255,255,255,0.8);
+        font-size: 12px;
+        font-weight: lighter;
+    }
+
+    .show-right {
+        position: relative;
+        display: inline-block;
+        height: 100%;
+        width: 68%;
+    }
+
+    .show-img {
+        position: relative;
+        height: 100%;
+        text-align: center;
+        left: 6%;
+    }
+
+    .show-text {
+        position: relative;
+        padding-top: 30px;
+        color: rgba(255,255,255,0.8);
+        line-height: 2;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+
+    .show-info {
+        position: relative;
+        padding-top: 30px;
+    }
+
+    .show-link {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+        .show-link a {
+            position: relative;
+            display: inline-block;
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.5);
+            width: 140px;
+            line-height: 28px;
+            font-size: 14px;
+        }
+
+            .show-link a:hover {
+                border: 1px solid #2080ff;
+                background: rgba(255,255,255,0.1);
+            }
+}
+
+@media screen and (max-width: 839px) {
+    .show {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        height: 880px;
+        width: 100%;
+        overflow: hidden;
+        background: #203550;
+        background-image: url(Images/BGP-21.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        cursor: default;
+        user-select: none;
+        padding-bottom: 100px;
+    }
+
+    .show-title {
+        position: relative;
+        height: 30px;
+        width: 100%;
+    }
+
+    .show-cont {
+        position: relative;
+        height: auto;
+        width: 100%;
+    }
+
+    .show-left {
+        position: relative;
+        width: 100%;
+        height: 280px;
+        vertical-align: top;
+        text-align: center;
+    }
+
+        .show-left h1 {
+            position: relative;
+            margin: 0 auto;
+            color: #ffffff;
+            font-weight: normal;
+            padding-top: 10px;
+            font-size: 18px;
+        }
+
+        .show-left h2 {
+            position: relative;
+            margin: 0 auto;
+            color: #ffffff;
+            font-weight: normal;
+            padding-top: 8px;
+            font-size: 16px;
+        }
+
+    .show-tip {
+        position: relative;
+        padding-top: 8px;
+        color: rgba(255,255,255,0.8);
+        font-size: 10px;
+        font-weight: lighter;
+    }
+
+    .show-right {
+        position: relative;
+        width: 100%;
+        height: auto;
+        background: rgba(102,209,188,1.00)
+    }
+
+    .show-img {
+        position: relative;
+        width: 96%;
+        max-width: 600px;
+        height: auto;
+        text-align: center;
+        margin: auto;
+    }
+
+    #showImg_1, #showImg_2, #showImg_3, #showImg_4, #showImg_5 {
+        width: 100%;
+        height: auto;
+    }
+
+    .show-text {
+        position: relative;
+        padding-top: 15px;
+        color: rgba(255,255,255,0.8);
+        line-height: 1.5;
+        font-weight: lighter;
+        font-size: 12px;
+    }
+
+    .show-info {
+        position: relative;
+        padding-top: 20px;
+    }
+
+    .show-link {
+        position: relative;
+        display: inline-block;
+    }
+
+        .show-link a {
+            position: relative;
+            display: inline-block;
+            color: #ffffff;
+            border: 1px solid rgba(255,255,255,0.5);
+            width: 100px;
+            line-height: 28px;
+            font-size: 14px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+            .show-link a:hover {
+                border: 1px solid #2080ff;
+                background: rgba(255,255,255,0.1);
+            }
+}
+
+
+/*南京乱次元 版权所有 NJVD All Rights Reserved*/
+/**/
